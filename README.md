@@ -89,7 +89,7 @@ HemoPI2 is used only as an external benchmark comparator (src/hemopi2_baseline.p
 
 Checkpoint
 
-models/peptox_best.pt is the best-performing seed (seed 1, validation composite 0.708) of the 5-seed training run. The manuscript’s reported numbers come from the 5-seed ensemble; the single-seed checkpoint reproduces close-to-headline performance for inference.
+Trained checkpoint — Download `peptox_best.pt` (31 MB) from the Releases page and place in `models/`. The checkpoint corresponds to the best of 5 seeds (seed 1, validation composite 0.708); manuscript numbers come from the full 5-seed ensemble.
 
 Citation
 
