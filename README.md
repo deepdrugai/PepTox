@@ -89,7 +89,14 @@ HemoPI2 is used only as an external benchmark comparator (src/hemopi2_baseline.p
 
 Checkpoint
 
-Trained checkpoint — Download `peptox_best.pt` (31 MB) from the Releases page and place in `models/`. The checkpoint corresponds to the best of 5 seeds (seed 1, validation composite 0.708); manuscript numbers come from the full 5-seed ensemble.
+Trained checkpoint — ## Download the model checkpoint
+
+Before running inference, download peptox_best.pt from the Releases page and place it in models/:
+
+https://github.com/deepdrugai/PepTox/releases/latest
+
+The checkpoint corresponds to the best of 5 seeds (seed 1, validation composite 0.708); manuscript numbers come from the full 5-seed ensemble.
+
 
 Citation
 
