@@ -16,6 +16,7 @@ env/
 *.swp
 .DS_Store
 
+# ML artifacts (feature arrays only — model + splits are committed/released)
 *.npy
 *.npz
 checkpoints/
