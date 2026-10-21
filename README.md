@@ -87,15 +87,22 @@ A sentinel value of -1 indicates no label is available for that task; such rows 
 
 HemoPI2 is used only as an external benchmark comparator (src/hemopi2_baseline.py). It is not part of the training corpus.
 
-Checkpoint
 
-Trained checkpoint — ## Download the model checkpoint
+## Data and trained models on Zenodo
 
-Before running inference, download peptox_best.pt from the Releases page and place it in models/:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23543664.svg)](https://doi.org/10.5281/zenodo.23543664)
 
-https://github.com/deepdrugai/PepTox/releases/latest
+All data artifacts and trained model weights required to reproduce the manuscript — the harmonized corpus, pre-computed feature arrays, domain-adapted ESM-2 model weights, and the five-seed trained ensemble — are deposited at Zenodo:
 
-The checkpoint corresponds to the best of 5 seeds (seed 1, validation composite 0.708); manuscript numbers come from the full 5-seed ensemble.
+**https://doi.org/10.5281/zenodo.23543664**
+
+Download the deposit and place its contents alongside the code:
+
+- `data/master_v6.csv`, `data/split_masks_random.pt`, `data/X_*.npy` → place in `data/`
+- `models/esm2_650m_DA.tar.gz` → extract to `models/esm2_650m_DA/final/`
+- `models/trained_ensemble/*.pt` → place in `models/trained_ensemble/`
+
+The single best-seed checkpoint (`peptox_best.pt`) is additionally available from the [GitHub Releases page](https://github.com/deepdrugai/PepTox/releases/latest) for quick-start inference without downloading the full Zenodo archive.
 
 
 Citation
